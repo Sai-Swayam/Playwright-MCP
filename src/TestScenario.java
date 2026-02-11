@@ -13,6 +13,9 @@ public class TestScenario {
 // Step 2: Select "Services" from header menu
 page.click("text=Services");
 
+// Step 3: Click the "Explore Our Client Work" link
+page.click("text=Explore Our Client Work");
+
             browser.close();
         }
     }
