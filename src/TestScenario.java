@@ -10,6 +10,9 @@ public class TestScenario {
             // Step 1: Navigate to Epam website
             page.navigate("https://www.epam.com/");
 
+// Step 2: Select "Services" from header menu
+page.click("text=Services");
+
             browser.close();
         }
     }
