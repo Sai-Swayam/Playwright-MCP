@@ -16,6 +16,13 @@ page.click("text=Services");
 // Step 3: Click the "Explore Our Client Work" link
 page.click("text=Explore Our Client Work");
 
+// Step 4: Verify "Client Work" text is visible
+if (!page.isVisible("text=Client Work")) {
+    throw new AssertionError("'Client Work' text is not visible on the page.");
+} else {
+    System.out.println("Verification successful: 'Client Work' text is visible.");
+}
+
             browser.close();
         }
     }
